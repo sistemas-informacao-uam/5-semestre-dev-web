@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<style>
+    .container {
+        min-width: 600px;
+        padding: 8px 80px;
+        box-sizing: border-box;
+    }
+
+    label {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+        font-weight: bold;
+        margin-bottom: 14px;
+    }
+
+
+    #botao-enviar {
+        margin-left: 93px;
+    }
+
+    progress {
+        width: 100px;
+    }
+</style>
+
+<body>
+    <table border="1" align="center">
+        <tr>
+            <th>
+                <h1>Minha Página em HTML </h1>
+                <a href="/">Página inicial | </a>
+                <a href="#">Sobre</a>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <form class="container" action="#">
+
+                    <label for="titulo">Título</label>
+                    <input type="text" name="titulo" placeholder="informe aqui..." required>
+                    <br>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="usuário" required>
+                    <br>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" placeholder="11 911224455" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}">
+                    <span>(opcional)</span>
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="foo@bar.com" required>
+                    <br>
+
+                    <label for="site">Site</label>
+                    <input type="url" name="site" placeholder="www.seusite.com.br">
+                    <span>(opcional)</span>
+                    <br>
+
+                    <label for="itens">Nr. de itens</label>
+                    <input type="number" name="itens" min="1" max="10" required>
+                    <span>(1-10)</span>
+                    <br>
+
+                    <label for="tamanho">Tamanho</label>
+                    <input type="range" name="tamanho" required step="10">
+                    <span>1m(incrementados em 10cm)</span>
+                    <br>
+
+                    <label for="data">Data</label>
+                    <input type="date" min="2010-16-12" required>
+                    <span>(mínimo 16 Dezembro 2010)</span>
+                    <br>
+
+                    <label for="hora">Hora</label>
+                    <input type="time" name="hora" required>
+                    <span>(incrementado em 30 min)</span>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <button type="submit" id="botao-enviar">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+
+                <hr>
+
+                <form class="container" action="#">
+                    <label for="pesquisa">Pesquisar</label>
+                    <input type="text">
+                    <button type="submit">OK</button>
+                </form>
+
+                <hr>
+
+                <section class="container">
+                    <label>Progresso</label>
+                    <progress value="23" max="250"></progress>
+
+                    <br>
+
+                    <label>Uso do disco</label>
+                    <progress value="17" max="19"></progress>
+                    <progress value="34" max="88"></progress>
+                    <progress value="78" max="200"></progress>
+                </section>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
