@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-title: rgb(0, 150, 209);
+    --color-menu: rgb(31, 31, 31);
+    --color-menu-vert: rgb(97, 97, 97);
+    --color-link: #fff;
+    --color-form: rgb(204, 241, 255);
+    --color-btn: rgb(230, 214, 0);
+    --color-btn-hover: rgb(255, 238, 0);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-menu);
+    padding: 20px;
+    color: var(--color-link);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+}
+
+.content .sub-menu {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.sub-menu .sub-menu-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--color-menu-vert);
+    width: 80%;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.sub-menu-content a {
+    text-decoration: none;
+    color: var(--color-link);
+    font-size: 25px;
+    margin: 20px 0 20px 0;
+}
+
+.sub-menu-content .little {
+    font-size: 20px;
+}
+
+.content .subscribe {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-form);
+}
+
+.subscribe .title {
+    font-size: 25px;
+    margin: 0 0 10px 0;
+    color: var(--color-title);
+}
+
+.subscribe input {
+    width: 200px;
+    margin: 5px 0;
+    padding: 3px;
+}
+
+.subscribe .btn-submit {
+    width: 190px;
+    padding: 10px;
+    background-color: var(--color-btn);
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.btn-submit:hover {
+    background: var(--color-btn-hover);
+}
+
+.wallpaper {
+    background-image: url('./assets/javascript.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-menu);
+    width: 100%;
+    padding: 20px;
+    color: white;
+    bottom: 0;
+}
