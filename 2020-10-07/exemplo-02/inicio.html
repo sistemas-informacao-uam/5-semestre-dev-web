@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <title>Layout de 3 colunas</title>
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/menu-horizontal.css">
+  <link rel="stylesheet" type="text/css" href="css/titulo.css">
+  <link rel="stylesheet" type="text/css" href="css/menu-vertical.css">
+  <link rel="stylesheet" type="text/css" href="css/formulario.css">
+</head>
+
+<body>
+
+  <div id="conteiner">
+
+    <div id="titulo">
+      <h1>Interfaces Web</h1>
+    </div>
+    <div id="menuh">
+      <a href="#">Inicio</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </div>
+    <div id="col1">
+      <div id="menuv">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+
+    <div id="col2">
+      <h1> Faça sua Inscrição</h1>
+
+      <form id="formulario">
+        <div>
+          <input type="text" id="name" placeholder="NOME" />
+        </div>
+
+        <div>
+          <input type="email" id="mail" placeholder="EMAIL" />
+        </div>
+
+        <div>
+          <input type="date" id="datanasc">
+        </div>
+
+        <div class="button">
+          <button type="button" onclick="enviarDados()">Enviar</button>
+        </div>
+
+      </form>
+    </div>
+
+    <div id="rodape" style="min-height: 24px;"></div>
+
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
