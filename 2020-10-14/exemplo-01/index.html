@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Jquery 🎈</title>
+
+  <style>
+    * {
+      margin: 0;
+      color: white;
+    }
+
+    main {
+      width: 100vw;
+      height: 100vh;
+      background-color: #111;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      flex-direction: column;
+    }
+
+    .field {
+      padding: 4px;
+    }
+
+    button {
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      border-radius: 8px;
+      padding: .8em 2em;
+      margin: 8px;
+    }
+
+    #add-field {
+      background-color: #009747;
+    }
+
+    #remove-field {
+      background-color: #ea2845;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="fields">
+    </div>
+    <div class="buttons">
+      <button id="add-field">Adicionar Campo</button>
+      <button id="remove-field">Remover Campo</button>
+    </div>
+  </main>
+  <script>
+    $("#add-field").click(function(){
+      $(".fields").append("<div class='field'><span>Campo: </span><input /></div>");
+    });
+    $("#remove-field").click(function(){
+      $(".fields .field").last().remove();
+    });
+  </script>
+</body>
+</html>
