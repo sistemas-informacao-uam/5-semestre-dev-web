@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Layout de 3 colunas</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-horizontal.css">
+    <link rel="stylesheet" type="text/css" href="css/titulo.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-vertical.css">
+    <link rel="stylesheet" type="text/css" href="css/formulario.css">
+</head>
+
+<body>
+
+    <div id="conteiner">
+
+        <div id="titulo">
+            <h1>Interfaces Web</h1>
+        </div>
+        <div id="menuh">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </div>
+        <div id="col1">
+            <div id="menuv">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+
+        <div id="col2">
+            <h1> Faça sua Inscrição</h1>
+
+            <FORM id="formulario">
+                <div>
+                    <input type="text" id="name" placeholder="NOME" oninvalid="setCustomValidity('Nome inválido...')" required/>
+                    <p id="errorName"></p>
+                </div>
+
+                <div>
+                    <input type="email" id="email" placeholder="EMAIL" oninvalid="setCustomValidity('Email inválido...')" required/>
+                    <p id="errorEmail"></p>
+                </div>
+             
+                <div>
+                    <input type="date" id="datanasc" oninvalid="setCustomValidity('Data inválida...')" required>
+                    <p id="errorDate"></p>
+                </div>
+
+                <div class="button" onclick="validation()">
+                    <button type="button" >Enviar</button>
+                </div>
+
+            </FORM>
+        </div>
+        <div id="rodape">
+            <h3>Professor:Marcos Devaner </h3>
+        </div>
+        <div>
+        <script src="./script/index.js"></script>
+</body>
